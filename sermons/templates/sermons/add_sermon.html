@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    
+
+
+{% extends "base.html" %}
+
+{% block title %}Add New Sermon{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Add a New Sermon</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Submit</button>
+        <a href="{% url 'latest_sermon' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}
+</body>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% extends "base.html" %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+
+    {% block title %}Latest Sermon{% endblock %}
+    {% block content %}
+    <div class="container mt-5">
+        <h2>Latest Sermon</h2>
+        {% if user.is_authenticated and user.is_staff %}
+        <div class="mt-3">
+            <a href="{% url 'add_sermon' %}" class="btn btn-primary">Add Sermon link: </a>
+        </div>
+        {% endif %}
+        {% if sermon %}
+        <div class="sermon-video">
+            <h3>{{ sermon.title }}</h3>
+            <div>
+                {{ sermon.embed_link|safe }}
+            </div>
+        </div>
+        {% else %}
+        <p>No sermon available yet.</p>
+        {% endif %}
+
+
+    </div>
+    {% endblock %}
+</body>
+
+</html>

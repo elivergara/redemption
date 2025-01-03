@@ -45,7 +45,7 @@ def contact(request):
     return render(request, 'home/contact.html')
 
 def latest_sermon(request):
-    return render(request, 'home/latest_sermon.html')
+    return render(request, 'sermons/latest_sermon.html')
 
 def blog(request):
     return render(request, 'home/blog.html')
