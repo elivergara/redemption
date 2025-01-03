@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid" id="bg-img">
+    <div class="section-background">
+        <div class="d-flex align-items-center justify-content-center no-gutters " style="height: 60vh;">
+            <h1 class="text-right col-7">Toda la vida es todo para Jesús <br> <br>All of Life is All for Jesus</h1>
+        </div>
+    </div>
+</div>
+
+<h2>Sundays:</h2>
+<ul>
+    <li><strong>9:45am:</strong> Prayer</li>
+    <li><strong>10:00am:</strong> Coffee</li>
+    <li><strong>10:30am:</strong> Bilingual Service</li>
+</ul>
+
+<div style="font-family: Arial, sans-serif; line-height: 1.5;">
+    <p><strong>Email:</strong> <a href="mailto:mesa@redemptionaz.com">mesa@redemptionaz.com</a></p>
+    <p><strong>Our Location:</strong> <a href="https://www.google.com/maps?q=1818+E+Southern+Ave+Suite+5+Mesa+AZ+85204" target="_blank">
+        1818 E Southern Ave. Suite 5, Mesa, AZ 85204</a></p>
+</div>
+
+
+<!-- Quick Links -->
+<hr>
+<h4>Sections:</h4>
+<ul>
+    <li><a href="{% url 'events' %}">Events</a></li>
+    <li><a href="{% url 'latest-sermon' %}">Latest Sermon</a></li>
+    <li><a href="{% url 'blog' %}">Pastors' Blog</a></li>
+</ul>
+</div>
+
+</div>
+
+{% endblock %}

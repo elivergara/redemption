@@ -1,0 +1,71 @@
+body {
+    background-color: #000000 !important;
+    background-size: cover;
+    margin: 0; /* Remove default body margins */
+    padding-top: 0%;
+    
+}
+
+.section-background {
+    background-image: url('/static/images/Photo+(35+of+41)-min.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+#bg-img {
+    --bs-gutter-x: 0 !important;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+h1 {
+color: #e7e7e7;
+text-transform: uppercase;
+text-align: center;
+font-weight: bolder;
+vertical-align: middle;
+margin-top: 10vh;
+}
+
+h2 {
+color: #e7e7e7;
+text-transform: uppercase;
+text-align: left;
+font-weight: bolder;
+vertical-align: middle;
+margin-top: 1vh;
+}
+
+
+
+ h3, h4, p {
+    color: #e7e7e7;
+}
+
+.banners {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center banners horizontally */
+    gap: 2px; /* Space between banners */
+}
+
+.banner img {
+    display: block;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.card-body {
+    background-color: #2b3035;
+    color: #e7e7e7 ;
+}
+.form-check-label {
+    color: #e7e7e7;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+
+
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <div class="container mt-5">
+        <h2>Add Event</h2>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Add Event</button>
+        </form>
+    </div>
+    {% endblock %}
+    
+</body>
+</html>

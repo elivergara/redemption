@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    {% extends "base.html" %}
+    {% block content %}
+    <div class="container mt-5">
+        <h2>Events</h2>
+        {% if user.is_authenticated and user.is_staff %}
+        <a href="{% url 'add_event' %}" class="btn btn-primary mb-3">Add New Event</a>
+        {% endif %}
+
+        <div class="row">
+            {% for event in events %}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{{ event.image.url }}" class="card-img-top" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ event.title }}</h5>
+                        <p class="card-text">{{ event.description|truncatechars:100 }}</p>
+                        {% if user.is_authenticated and user.is_staff %}
+                        <a href="{% url 'edit_event' event.pk %}" class="btn btn-secondary">Edit</a>
+                        <a href="{% url 'delete_event' event.pk %}" class="btn btn-danger">Delete</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endblock %}
+</body>
+
+</html>

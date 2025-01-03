@@ -1,0 +1,40 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid" id="bg-img">
+    <div class="section-background">
+        <div class="d-flex align-items-center justify-content-center no-gutters " style="height: 60vh;">
+            <h1 class="text-right col-7">Toda la vida es todo para Jesús <br> <br>All of Life is All for Jesus</h1>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Links -->
+<div class="banners">
+    <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters  ">
+        <a href="{% url 'events' %}">
+            <img src="{% static 'images/banners/events.png' %}" alt="Events Banner">
+        </a>
+    </div>
+    <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
+        <a href="{% url 'blog' %}">
+            <img src="{% static 'images/banners/notes.png' %}" alt="Blog Banner" >
+        </a>
+    </div>
+    <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
+        <a href="{% url 'latest-sermon' %}">
+            <img src="{% static 'images/banners/watch.png' %}" alt="Latest Sermon Banner">
+        </a>
+    </div>
+    <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
+        <a href="https://pushpay.com/g/redemptionmesa">
+            <img src="{% static 'images/banners/give.png' %}" alt="Latest Sermon Banner">
+        </a>
+    </div>
+
+</div>
+
+
+{% endblock %}
