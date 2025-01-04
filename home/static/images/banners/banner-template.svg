@@ -7,7 +7,7 @@
    viewBox="0 0 317.49998 79.374999"
    version="1.1"
    id="svg1"
-   inkscape:export-filename="watch.png"
+   inkscape:export-filename="give.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
@@ -163,7 +163,8 @@
     </g>
     <g
        id="g20"
-       style="filter:url(#filter21)">
+       style="filter:url(#filter21)"
+       transform="matrix(-1.0685899,0.44210061,0.53504555,0.88296087,337.13483,-67.694924)">
       <path
          style="fill:#5b6e83;fill-opacity:1;stroke-width:0.278303;filter:url(#filter17)"
          d="M 320.64098,-0.59232638 -20.186116,95.95984 -0.04996942,28.872225 c 0,0 319.34942942,-29.08453238 320.69094942,-29.46455138 z"
@@ -192,13 +193,13 @@
     <text
        xml:space="preserve"
        style="font-size:35.2778px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:none;stroke:#ffffff;stroke-width:1.32292;stroke-dasharray:none"
-       x="97.523537"
-       y="54.1222"
+       x="117.35493"
+       y="52.999668"
        id="text4"><tspan
          sodipodi:role="line"
          id="tspan4"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.2778px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke:none;stroke-width:1.32292"
-         x="97.523537"
-         y="54.1222">WATCH</tspan></text>
+         x="117.35493"
+         y="52.999668">GIVE</tspan></text>
   </g>
 </svg>

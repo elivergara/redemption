@@ -21,4 +21,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path('', include('home.urls')),
     path('sermons/', include('sermons.urls')),
+    path('notes/', include('notes.urls')),
+
 ]

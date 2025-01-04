@@ -1,4 +1,3 @@
-from django.shortcuts import render, redirect
 from .forms import CustomUserCreationForm
 from django.contrib import messages
 from django.contrib.auth import logout, login
@@ -8,6 +7,7 @@ from django.contrib.auth.decorators import login_required, user_passes_test
 from .models import Event
 from .forms import EventForm
 from django.contrib.auth.models import Group
+
 
 
 # Create your views here.
@@ -47,8 +47,8 @@ def contact(request):
 def latest_sermon(request):
     return render(request, 'sermons/latest_sermon.html')
 
-def blog(request):
-    return render(request, 'home/blog.html')
+def notes(request):
+    return render(request, 'notes/notes.html')
 
 
 def custom_logout(request):
@@ -73,7 +73,7 @@ def update_subscription(request):
     return redirect('profile')  # Redirect back to the profile page
 
 
-######### Events Adding/Editing Section
+######### Events Adding/Editing/Deleting Section
 def is_staff_user(user):
     return user.is_staff
 
@@ -117,3 +117,5 @@ def events_list(request):
     events = Event.objects.all().order_by('-created_at')  # Query all events
     is_staff = request.user.is_authenticated and (request.user.is_staff or request.user.groups.filter(name='Staff').exists())
     return render(request, 'home/events.html', {'events': events, 'is_staff': is_staff})
+
+

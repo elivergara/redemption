@@ -12,7 +12,6 @@ urlpatterns = [
     path('profile/', views.profile, name='profile'),  # Your profile page
     path('', views.index, name='index'),  # Homepage
     path('update-subscription/', views.update_subscription, name='update_subscription'),
-    path('blog/', views.blog, name='blog'),
     path('password-change/', auth_views.PasswordChangeView.as_view(template_name='home/password_change.html'), 
          name='password_change'),
     path('password-change/done/', auth_views.PasswordChangeDoneView.as_view(template_name='home/password_change_done.html'), 

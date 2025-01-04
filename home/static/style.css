@@ -63,9 +63,22 @@ margin-top: 1vh;
 }
 
 .card-body {
-    background-color: #2b3035;
-    color: #e7e7e7 ;
+    background-color: #293541;
+    color: #e7e7e7;
 }
+p .card-text {
+    background-color: #242c35;
+    color: #ffffff !important;
+}
+
 .form-check-label {
     color: #e7e7e7;
+}
+
+.text-center {
+    background-color: #2b3035;
+}
+
+.text-muted {
+    color: #a7a7a7 !important;
 }
