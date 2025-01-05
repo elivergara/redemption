@@ -7,6 +7,8 @@ from django.contrib.auth.decorators import login_required, user_passes_test
 from .models import Event
 from .forms import EventForm
 from django.contrib.auth.models import Group
+from django.http import HttpResponse
+
 
 
 
@@ -119,3 +121,22 @@ def events_list(request):
     return render(request, 'home/events.html', {'events': events, 'is_staff': is_staff})
 
 
+
+
+##### Get Emails
+@login_required  # Ensure only logged-in users can access this
+def export_emails(request):
+    # Query profiles with subscribed_to_updates=True
+    profiles = Profile.objects.filter(subscribed_to_updates=True).select_related('user')
+    
+    # Create a response object
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename="subscribed_emails.csv"'
+    
+    # Write to the CSV
+    response.write("Email\n")  # Header
+    for profile in profiles:
+        if profile.user.email:  # Ensure user has an email
+            response.write(f"{profile.user.email}\n")
+    
+    return response

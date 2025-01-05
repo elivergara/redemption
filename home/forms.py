@@ -14,5 +14,6 @@ class CustomUserCreationForm(UserCreationForm):
 class EventForm(forms.ModelForm):
     class Meta:
         model = Event
-        fields = ['title', 'description', 'image']
+        fields = ['title', 'description', 'image', 'pushpay_link']  # Added pushpay_link
+
 

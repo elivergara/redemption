@@ -11,7 +11,8 @@ class Profile(models.Model):
 class Event(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
-    image = models.ImageField(upload_to='static/images/events/')
+    image = models.ImageField(upload_to='static/images/events/', blank=True, null=True)  # Optional image field
+    pushpay_link = models.URLField(max_length=500, blank=True, null=True)  # New optional hyperlink field
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
 

@@ -82,3 +82,7 @@ p .card-text {
 .text-muted {
     color: #a7a7a7 !important;
 }
+
+hr {
+    color: aliceblue;
+}

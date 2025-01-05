@@ -20,6 +20,7 @@ urlpatterns = [
     path('events/add/', views.add_event, name='add_event'),
     path('events/edit/<int:pk>/', views.edit_event, name='edit_event'),
     path('events/delete/<int:pk>/', views.delete_event, name='delete_event'),
+    path('export-emails/', views.export_emails, name='export_emails'),
     
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
