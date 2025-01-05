@@ -17,10 +17,11 @@ def add_sermon(request):
         form = SermonForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('sermons')
+            return redirect('latest_sermon')  # Redirect to the latest sermon page
     else:
         form = SermonForm()
     return render(request, 'sermons/add_sermon.html', {'form': form})
+
 
 def latest_sermon(request):
     latest = Sermon.objects.order_by('-created_at').first()
