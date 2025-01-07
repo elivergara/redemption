@@ -32,7 +32,7 @@ DEBUG = False
 # Run collectstatic before deployment
 
 
-ALLOWED_HOSTS = ['redemption-mesa.site', 'www.redemption-mesa.site','147.79.74.3', '127.0.0.1' ]
+ALLOWED_HOSTS = ['redemption-mesa.site', 'www.redemption-mesa.site','147.79.74.3', '127.0.0.1' , 'elivergara.net']
 
 
 # Application definition
