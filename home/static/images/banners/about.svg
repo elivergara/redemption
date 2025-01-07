@@ -133,9 +133,9 @@
        inkscape:label="Blur"
        id="filter21"
        x="-0.070640608"
-       y="-0.39980526"
+       y="-0.065699941"
        width="1.1293002"
-       height="1.4689992">
+       height="1.1313999">
       <feGaussianBlur
          stdDeviation="2 2"
          result="blur"
@@ -163,7 +163,8 @@
     </g>
     <g
        id="g20"
-       style="filter:url(#filter21)">
+       style="filter:url(#filter21)"
+       transform="matrix(-0.9695229,-0.25726636,0.24633579,-0.98130305,315.76886,121.94718)">
       <path
          style="fill:#5b6e83;fill-opacity:1;stroke-width:0.278303;filter:url(#filter17)"
          d="M 320.64098,-0.59232638 -20.186116,95.95984 -0.04996942,28.872225 c 0,0 319.34942942,-29.08453238 320.69094942,-29.46455138 z"
@@ -179,7 +180,7 @@
          style="fill:#475b71;fill-opacity:1;stroke-width:0.225215;filter:url(#filter15)"
          d="M 299.29868,76.175426 -10.386305,-0.29984118 185.16415,13.282215 Z"
          id="path3"
-         transform="matrix(-0.96063361,-0.01954272,-0.19183008,0.64862806,296.11591,8.4827108)" />
+         transform="matrix(-1.0303718,0.2902882,0.13815695,1.2792797,317.80693,-37.357517)" />
     </g>
     <rect
        style="display:inline;fill:none;stroke:#ffffff;stroke-width:1.66684;stroke-dasharray:none"
@@ -194,7 +195,8 @@
        style="font-size:35.2778px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:none;stroke:#ffffff;stroke-width:1.32292;stroke-dasharray:none"
        x="70.956947"
        y="54.1222"
-       id="text4"><tspan
+       id="text4"
+       sodipodi:insensitive="true"><tspan
          sodipodi:role="line"
          id="tspan4"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:35.2778px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;stroke:none;stroke-width:1.32292"
