@@ -24,7 +24,7 @@ SECRET_KEY = "django-insecure-0r6$vpo7t%gx+aov816)faxy9tuf1!390)6w$2$g+$x8b17w#_
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # For local development
-DEBUG = False
+DEBUG = True
 # STATICFILES_DIRS works when DEBUG=True
 
 # For production
@@ -32,7 +32,7 @@ DEBUG = False
 # Run collectstatic before deployment
 
 
-ALLOWED_HOSTS = ['elivergara.net','147.79.74.3', '127.0.0.1' ]
+ALLOWED_HOSTS = ['redemption-mesa.site', 'www.redemption-mesa.site','147.79.74.3', '127.0.0.1' ]
 
 
 # Application definition
