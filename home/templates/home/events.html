@@ -19,25 +19,18 @@
 
         <div class="row">
             {% for event in events %}
-            <div class="col-md-4 mb-4">
+            <div class="col-md-6 mb-4">
                 <div class="card">
                     {% if event.image %}
-                    <img src="{{ event.image.url }}" class="card-img-top" style="height: 200px; object-fit: cover;">
+                    <img src="{{ event.image.url }}" class="card-img-top" style="height: 250px; object-fit: cover;">
                     {% endif %}
                     <div class="card-body">
                         <h5 class="card-title">{{ event.title }}</h5>
-                        <p class="card-text">{{ event.description|truncatechars:100 }}</p>
-
-
-    
-        
-    
-                            {% if event.pushpay_link %}
-                                <p><a href="{{ event.pushpay_link }}" target="_self">Register Here!</a></p>
-                            {% endif %}
-                            <p>Created on: {{ event.created_at }}</p>
- 
-
+                        <p class="card-text">{{ event.description|linebreaks|truncatechars:450 }}</p>
+                        {% if event.pushpay_link %}
+                        <p><a href="{{ event.pushpay_link }}" target="_self">Register Here!</a></p>
+                        {% endif %}
+                        <p class="small-text">Published on: {{ event.created_at }}</p>
                         {% if user.is_authenticated and user.is_staff %}
                         <a href="{% url 'edit_event' event.pk %}" class="btn btn-secondary">Edit</a>
                         <a href="{% url 'delete_event' event.pk %}" class="btn btn-danger">Delete</a>

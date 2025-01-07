@@ -23,7 +23,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-0r6$vpo7t%gx+aov816)faxy9tuf1!390)6w$2$g+$x8b17w#_"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# For local development
+DEBUG = True
+# STATICFILES_DIRS works when DEBUG=True
+
+# For production
+# DEBUG = False
+# Run collectstatic before deployment
+
 
 ALLOWED_HOSTS = ['elivergara.net','147.79.74.3', '127.0.0.1' ]
 
@@ -120,10 +127,20 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
+
+######## For SERVER enable only this lines:
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/5.1/howto/static-files/
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+# Media files (Uploaded files)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-STATIC_URL = "/static/"
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -134,5 +151,9 @@ LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = '/'  # Redirects to the home page
 
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT =  os.path.join(BASE_DIR, 'media') 
+######## For local enable these:
+if DEBUG:
+    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'home/static')]
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+

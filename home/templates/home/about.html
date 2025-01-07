@@ -1,37 +1,58 @@
-{% block content %}
+{% extends "base.html" %}
+{% load static %}
+{% block title %}About Us{% endblock %}
 
-<div class="container-fluid" id="bg-img">
-    <div class="section-background">
-        <div class="d-flex align-items-center justify-content-center no-gutters " style="height: 60vh;">
-            <h1 class="text-right col-7">Toda la vida es todo para Jesús <br> <br>All of Life is All for Jesus</h1>
+{% block content %}
+<div class="container-fluid pt-2" id="about_us">
+    <h2>Redemption Mesa</h2>
+    <h6>We are One Family in Christ, Multicultural and Bilingual,
+        Gospel-centered and outward-focused.<br><br>
+        Somos Una familia en Cristo, Multicultural y Bilingüe,
+        centrada en el Evangelio y enfocada hacia el exterior.
+    </h6>
+
+<hr>
+    <div class="container-fluid pt-2" id="about_us">
+        <h2>Sundays:</h2>
+        <ul>
+            <li><strong>9:45am:</strong> Prayer</li>
+            <li><strong>10:00am:</strong> Coffee</li>
+            <li><strong>10:30am:</strong> Bilingual Service</li>
+        </ul>
+        <hr>
+
+
+
+        <div class="container mt-6">
+            <div class="card shadow-lg contact-card">
+                <div class="card-body align-items-center">
+                    <!-- Logo -->
+                    <div class="logo-container">
+                        <img src="{% static 'images/logos/Logo R Withe.png' %}" alt="Redemption Mesa Logo"
+                            class="img-fluid">
+                    </div>
+                    <!-- Text -->
+                    <div class="text-container ms-4">
+                        <p class="contact-title">
+                            <a href="https://mesa.redemptionaz.com/">Redemption Mesa</a>
+                        </p>
+                        <p class="contact-email">
+                            <a href="mailto:mesa@redemptionaz.com">mesa@redemptionaz.com</a>
+                        </p>
+                        <p class="contact-location">Directions:</p>
+                    </div>
+                    <!-- Location -->
+                    <div class="text-container ms-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="https://www.google.com/maps?q=1818+E+Southern+Ave+Suite+5+Mesa+AZ+85204"
+                            target="_blank" class="location-link">
+                            1818 E Southern Ave. Suite 5, Mesa, AZ 85204
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
-
-<div class="container-fluid pt-2">
-    <h2>Sundays:</h2>
-    <ul>
-        <li><strong>9:45am:</strong> Prayer</li>
-        <li><strong>10:00am:</strong> Coffee</li>
-        <li><strong>10:30am:</strong> Bilingual Service</li>
-    </ul>
-    <h5>Contact Us:</h5>
-    <p><a href="https://mesa.redemptionaz.com/">Redemption Mesa</a>
-    <p><a href="mailto:mesa@redemptionaz.com">mesa@redemptionaz.com</a>
-    </p>
-    <p>Our Location:</p> <a href="https://www.google.com/maps?q=1818+E+Southern+Ave+Suite+5+Mesa+AZ+85204" target="_blank">
-            1818 E Southern Ave. Suite 5, Mesa, AZ 85204
-        </a>
-
-    <!-- Quick Links -->
-    <hr>
-    <h4>Sections:</h4>
-    <ul>
-        <li><a href="{% url 'events' %}">Events</a></li>
-        <li><a href="{% url 'latest-sermon' %}">Latest Sermon</a></li>
-        <li><a href="{% url 'blog' %}">Pastors' Blog</a></li>
-    </ul>
-</div>
-</div>
-
-{% endblock %}
+    {% endblock %}

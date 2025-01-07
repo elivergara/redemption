@@ -1,0 +1,14 @@
+Django Static Files Guide:
+==========================
+1. DEBUG = True (Development)
+   - Use STATICFILES_DIRS for local testing.
+   - No need to run collectstatic.
+
+2. DEBUG = False (Production)
+   - Run: python manage.py collectstatic
+   - Ensure STATIC_ROOT is configured.
+   - Use Nginx/OpenLiteSpeed to serve static files.
+
+TEMPLATES:
+   {% load static %}
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">

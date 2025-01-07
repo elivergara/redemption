@@ -17,6 +17,7 @@ urlpatterns = [
     path('password-change/done/', auth_views.PasswordChangeDoneView.as_view(template_name='home/password_change_done.html'), 
          name='password_change_done'), 
     path('events/', views.events_list, name='events'),
+    path('about/', views.about, name='about'),  
     path('events/add/', views.add_event, name='add_event'),
     path('events/edit/<int:pk>/', views.edit_event, name='edit_event'),
     path('events/delete/<int:pk>/', views.delete_event, name='delete_event'),
