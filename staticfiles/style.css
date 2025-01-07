@@ -65,6 +65,7 @@ margin-top: 1vh;
 .card-body {
     background-color: #293541;
     color: #e7e7e7;
+    padding-bottom: 10px;
 }
 p .card-text {
     background-color: #242c35;
@@ -77,6 +78,8 @@ p .card-text {
 
 .text-center {
     background-color: #2b3035;
+    border-top: none; /* Remove top border or divider */
+    margin-top: 10px; /* Adjust spacing above if needed */
 }
 
 .text-muted {
@@ -85,4 +88,93 @@ p .card-text {
 
 hr {
     color: aliceblue;
+}
+.small-text {
+    font-size: 0.8em; /* Adjust the size as needed */
+    color: rgb(176, 176, 176); /* Optional: Add a lighter color for differentiation */
+}
+
+.fa-youtube {
+    font-size: 2rem; /* Adjust size */
+    color: rgb(255, 60, 60); /* Adjust color */
+    margin-right: 10px; /* Optional spacing */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    transition: 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.fa-youtube:hover {
+    color: rgb(83, 0, 0); /* Changes icon color on hover */
+}
+
+.card-title {
+    color:aliceblue;
+}
+
+#about_us {
+    color: #f5f5f5; /* A shade of white */
+    background-color: #000; /* Optional: Add a dark background for contrast */
+    padding: 2vh; /* Optional: Add some padding for spacing */
+}
+
+
+
+/* Card Styling */
+.contact-card {
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 0px;
+    border-radius: 0;
+}
+
+/* Logo Styling */
+.logo-container img {
+    max-width: 25vh;
+}
+
+/* Text Styling */
+.text-container {
+    color: #f5f5f5;
+}
+
+.contact-title a {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.contact-title a:hover {
+    text-decoration: underline;
+}
+
+.contact-email a,
+.contact-location {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.contact-email a:hover {
+    text-decoration: underline;
+}
+
+/* Location Link Styling */
+.location-link {
+    color: #79ccff;
+    text-decoration: none;
+}
+
+.location-link:hover {
+    text-decoration: underline;
+}
+
+.fa-location-dot {
+    font-size: 1.5rem; /* Adjust size */
+    color: #29a653; /* Adjust color */
+    margin-right: 10px; /* Optional spacing */
+    transition: color 0.3s ease; /* Smooth hover effect */
 }
