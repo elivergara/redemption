@@ -29,17 +29,17 @@ The app is hosted on a VPS server and is accessible at [redemption-mesa.site](ht
 ### Events Management
 - **Public Access**: All users can view events.
 - **Staff Privileges**: Staff users can add, edit, or delete events.
-  - ![screenshot 7](./screenshots/screenshot7.png)
+  - ![Screenshot 7](./screenshots/screenshot7.png)
 
 ### Watch Section
 - Embedded YouTube videos of worship services and other church content.
 - Staff users can add new videos via an embed link form.
-  - ![screenshot 8](./screenshots/screenshot8.png)
-  - ![screenshot 9](./screenshots/screenshot9.png)
+  - ![Screenshot 8](./screenshots/screenshot8.png)
+  - ![Screenshot 9](./screenshots/screenshot9.png)
 
 ### About Us
 - Provides information about the church and a link to its physical location.
-  - ![screenshot 10](./screenshots/screenshot10.png)
+  - ![Screenshot 10](./screenshots/screenshot10.png)
 
 ### Notes Section
 - **Public Access**: Users can view posts related to sermons or other updates.
