@@ -1,8 +1,8 @@
 # Redemption Mesa
 
 ## Overview
-**Redemption Mesa** is a Progressive Web Application (PWA) built with Django 5 to support a local church's community engagement. Designed with mobile users in mind, the app offers a seamless experience for managing church events, accessing sermon resources, and engaging with church updates. The app allows for easy navigation, user-friendly forms, and distinct user roles for administrators and regular users.
-![Phone](./screenshots/pixel-phone.png)
+**Redemption Mesa** is a Progressive Web Application (PWA) built with Django 5 to support a local church's community engagement. Designed with mobile users in mind, the app offers a seamless experience for managing church events, accessing sermon resources, and engaging with church updates. The app allows for easy navigation, user-friendly forms, and distinct user roles for administrators and regular users.<br>
+![Phone](./screenshots/pixelphone.png) <br>
 The app is hosted on a VPS server and is accessible at [redemption-mesa.site](https://redemption-mesa.site). As a PWA, it can be installed on Android and iOS devices for quick access.
 
 ## Features
