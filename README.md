@@ -9,41 +9,41 @@ The app is hosted on a VPS server and is accessible at [redemption-mesa.site](ht
 
 ### Homepage
 - **Hero Section**: Displays a welcoming banner with a hero photo and links to navigate to key sections of the app. 
-  - ![Screenshot 1](./screenshots/screenshot1.png)
+   ![Screenshot 1](./screenshots/screenshot1.png)
 
 ### Navigation Bar
 - Dynamic navbar adjusts based on user login status:
   - **Logged-out users**: Links to "Home," "Register," and "Login."
-    - ![Screenshot 2](./screenshots/screenshot2.png)
+     ![Screenshot 2](./screenshots/screenshot2.png)
   - **Logged-in users**: Displays additional options for "Preferences" and other relevant sections.
-    - ![Screenshot 3](./screenshots/screenshot3.png)
+     ![Screenshot 3](./screenshots/screenshot3.png)
 
 ### User Management
 - **Registration**: New users can register with a simple form.
-  - ![Screenshot 4](./screenshots/screenshot4.png)
+   ![Screenshot 4](./screenshots/screenshot4.png)
 - **Login**: Registered users can log in to access personalized features.
-  - ![Screenshot 5](./screenshots/screenshot5.png)
+   ![Screenshot 5](./screenshots/screenshot5.png)
 - **Preferences**: Logged-in users can manage subscriptions for church updates, change their passwords, or export subscribed emails (staff-only feature).
-  - ![Screenshot 6](./screenshots/screenshot6.png)
+   ![Screenshot 6](./screenshots/screenshot6.png)
 
 ### Events Management
 - **Public Access**: All users can view events.
 - **Staff Privileges**: Staff users can add, edit, or delete events.
-  - ![Screenshot 7](./screenshots/screenshot7.png)
+   ![Screenshot 7](./screenshots/screenshot7.png)
 
 ### Watch Section
 - Embedded YouTube videos of worship services and other church content.
 - Staff users can add new videos via an embed link form.
-  - ![Screenshot 8](./screenshots/screenshot8.png)
-  - ![Screenshot 9](./screenshots/screenshot9.png)
+   ![Screenshot 8](./screenshots/screenshot8.png)
+   ![Screenshot 9](./screenshots/screenshot9.png)
 
 ### About Us
 - Provides information about the church and a link to its physical location.
-  - ![Screenshot 10](./screenshots/screenshot10.png)
+   ![Screenshot 10](./screenshots/screenshot10.png)
 
 ### Notes Section
-- **Public Access**: Users can view posts related to sermons or other updates.
-- **Staff Features**: Staff users can add notes (posts) using a form.
+ **Public Access**: Users can view posts related to sermons or other updates.
+ **Staff Features**: Staff users can add notes (posts) using a form.
 
 ### Give Section
 - Redirects users to the church's Pushpay page for tithes and offerings.
