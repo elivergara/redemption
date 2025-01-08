@@ -96,10 +96,16 @@ The app is hosted on a VPS server, configured with OpenLiteSpeed and Ubuntu 24.0
 All referenced screenshots are stored in the `screenshots` directory and will be added to the GitHub repository.
 
 ## Future Plans
-- Add real-time chat functionality for church members.
-- Enhance PWA capabilities for a better offline experience.
+- Add a registration section for volunteers.
+- Add a submission forms for background checks and other documents Staff might neeed.
+- Improve the navigation experience as needed by the church.
 - Implement analytics for staff to track user engagement.
 
 ## Acknowledgments
-Special thanks to the Redemption Mesa Church for providing the opportunity to develop this app to serve the community better.
+#### Special thanks to the **Redemption Mesa Church** for providing the opportunity to develop this app to serve the community better.
+
+
+ 
+
+
 
