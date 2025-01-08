@@ -1,9 +1,21 @@
-# Redemption Mesa
+# Church Management app - Made for Redemption Mesa Church
 
 ## Overview
-**Redemption Mesa** is a Progressive Web Application (PWA) built with Django 5 to support a local church's community engagement. Designed with mobile users in mind, the app offers a seamless experience for managing church events, accessing sermon resources, and engaging with church updates. The app allows for easy navigation, user-friendly forms, and distinct user roles for administrators and regular users.<br>
+**Redemption Mesa** is a Progressive Web Application (PWA) built with Django 5 to support a local church's community engagement. Designed with mobile users in mind, the app offers a seamless experience for managing church events, accessing sermon resources, and engaging with church updates.<br><hr> The app allows for easy navigation, user-friendly forms, and distinct user roles for administrators and regular users.<br><br>
 ![Phone](./screenshots/pixelphone.png) <br>
-The app is hosted on a VPS server and is accessible at [redemption-mesa.site](https://redemption-mesa.site). As a PWA, it can be installed on Android and iOS devices for quick access.
+The app is hosted on a VPS server and is accessible at [redemption-mesa.site](https://redemption-mesa.site). As a PWA, it can be installed on Android and iOS devices for quick access.<br>
+#### Mobile Installation instructions:
+1. Open Safari and go to https://redemption-mesa.site.
+2. Tap the Share icon (🔼).
+3. Scroll down and select "Add to Home Screen."
+4. Tap "Add" in the top-right corner.
+5. The app is now installed and ready to use from your home screen.
+Instrucciones para instalar en Android:
+1. Open Google Chrome (or any Chromium-based browser) and go to https://redemption-mesa.site
+2. Tap the three dots menu (⋮) in the top-right corner of the browser.
+3. Select "Add to Home Screen."
+4. Confirm the app name and tap "Add."
+5. The app is now installed and ready to use from your home screen.
 
 ## Features
 
