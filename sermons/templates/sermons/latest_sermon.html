@@ -5,7 +5,6 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'style.css' %}">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +30,15 @@
                 {{ sermon.embed_link|safe }}
             </div>
         </div>
+
+        {% if user.is_authenticated and user.is_staff %}
+        <!-- Edit and Delete buttons -->
+        <div class="m-3">
+            <a href="{% url 'edit_sermon' sermon.pk %}" class="btn btn-secondary">Edit</a>
+            <a href="{% url 'delete_sermon' sermon.pk %}" class="btn btn-danger">Delete</a>
+        </div>
+        {% endif %}
+        
         {% else %}
         <p>Stream is not yet available. Please check back later.</p>
         {% endif %}
@@ -49,5 +57,5 @@
     
     {% endblock %}
 
-
+</body>
 </html>

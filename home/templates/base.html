@@ -22,6 +22,14 @@
   <link rel="manifest" href="{% static 'manifest.json' %}">
   <meta name="theme-color" content="#2b3035">
 
+  <style>
+    /* Control the size of the logo */
+    .navbar-brand img {
+      height: 40px; /* Adjust this height as needed */
+      width: auto;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -31,7 +39,11 @@
   <!-- uses brand style -->
   <nav class="container-fluid navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">Redemption Mesa</a>
+      <!-- Logo added here -->
+      <a class="navbar-brand" href="/">
+        <img src="{% static 'images/logos/r_blanco.png' %}" alt="Redemption Mesa Logo"> 
+        Redemption Mesa
+      </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,23 +74,13 @@
     </div>
   </nav>
 
-  <!-- Content section  -->
+  <!-- Content section -->
   <div class="col-12">
     {% block content %}
     {% endblock %}
   </div>
 
-<!-- Service Worker -->
-
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/static/serviceworker.js')
-      .then((registration) => console.log('Service Worker registered', registration))
-      .catch((error) => console.log('Service Worker registration failed', error));
-  }
-</script>
-
-
-</body>
-
-</html>
+  <!-- Social Media Footer -->
+  <footer class="bg-dark text-white py-3 mt-5">
+    <div class="container text-center social-icons">
+      <a href="https://www.facebook.com/redemptionwestme
