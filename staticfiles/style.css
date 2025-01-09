@@ -10,7 +10,7 @@ body {
     background-image: url('/static/images/Photo+(35+of+41)-min.jpg');
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    height: 45vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -47,6 +47,11 @@ margin-top: 1vh;
  h3, h4, p {
     color: #e7e7e7;
 }
+
+.navbar-brand img {
+    height: 35px !important;
+}
+
 
 .banners {
     display: flex;
@@ -178,3 +183,32 @@ hr {
     margin-right: 10px; /* Optional spacing */
     transition: color 0.3s ease; /* Smooth hover effect */
 }
+
+
+/* Footer Social icons */
+/* Remove underlines from social media icons */
+.social-icons a {
+    text-decoration: none; /* Removes the underline */
+  }
+  
+  .social-icons i {
+    vertical-align: middle; /* Ensures icons are vertically aligned correctly */
+  }
+  
+/* Add this to your CSS file or inside a <style> tag in base.html */
+.social-icons .fa-facebook-square {
+    color: #1877f2 !important; /* Facebook blue */
+  }
+  
+  .social-icons .fa-instagram {
+    color: #e4405f; /* Instagram pink */
+  }
+  
+  .social-icons .fa-microphone {
+    color: #9fc49b; /* Apple color */
+  }
+  
+  .social-icons .fa-youtube {
+    color: #ff0000; /* YouTube red */
+  }
+  
