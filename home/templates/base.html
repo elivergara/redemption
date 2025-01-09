@@ -83,4 +83,30 @@
   <!-- Social Media Footer -->
   <footer class="bg-dark text-white py-3 mt-5">
     <div class="container text-center social-icons">
-      <a href="https://www.facebook.com/redemptionwestme
+      <a href="https://www.facebook.com/redemptionwestmesa/" target="_blank" class="text-white mx-3">
+        <i class="fab fa-facebook-square fa-2x"></i>
+      </a>
+      <a href="https://www.instagram.com/redemptionmesa/" target="_blank" class="text-white mx-3">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="https://podcasts.apple.com/us/podcast/redemption-mesa/id1113230756" target="_blank" class="text-white mx-3">
+        <i class="fab fa-solid fa-microphone fa-2x"></i>
+      </a>
+      <a href="https://www.youtube.com/@redemptionmesa" target="_blank" class="text-white mx-3">
+        <i class="fab fa-youtube fa-2x"></i>
+      </a>
+    </div>
+  </footer>
+  
+  <!-- Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/static/serviceworker.js')
+        .then((registration) => console.log('Service Worker registered', registration))
+        .catch((error) => console.log('Service Worker registration failed', error));
+    }
+  </script>
+
+</body>
+
+</html>
