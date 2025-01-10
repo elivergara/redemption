@@ -144,6 +144,9 @@ hr {
     padding: 2vh; /* Optional: Add some padding for spacing */
 }
 
+#about-text h4, p {
+    color: #2b3035 !important;
+}
 
 
 /* Card Styling */
