@@ -19,11 +19,27 @@
     <h2 class="text-center mb-4 ">Register</h2>
     <form method="POST" class="p-3 border rounded bg-light">
       {% csrf_token %}
-      <!-- {{ form.as_p }} -->
-
-    <!-- Username Field -->
+      
+      <!-- First Name Field -->
       <div class="mb-3">
-        <label for="id_username" class="form-label">Username:</label><br>
+        <label for="id_first_name" class="form-label">First Name:</label><br>
+        {{ form.first_name }}
+        {% for error in form.first_name.errors %}
+        <div class="text-danger small">{{ error }}</div>
+        {% endfor %}
+      </div>
+
+      <!-- Last Name Field -->
+      <div class="mb-3">
+        <label for="id_last_name" class="form-label">Last Name:</label><br>
+        {{ form.last_name }}
+        {% for error in form.last_name.errors %}
+        <div class="text-danger small">{{ error }}</div>
+        {% endfor %}
+      </div>
+      <!-- Username Field -->
+      <div class="mb-3">
+        <label for="id_username" class="form-label">Desired Username:</label><br>
         {{ form.username }}
         {% for error in form.username.errors %}
         <div class="text-danger small">{{ error }}</div>
@@ -57,11 +73,8 @@
         {% endfor %}
       </div>
 
+      <button type="submit" class="btn btn-primary" style="width: 200px;">Register</button>
 
-
-        <button type="submit" class="btn btn-primary" style="width: 200px;">Register</button>
-
-      
     </form>
   </div>
 
