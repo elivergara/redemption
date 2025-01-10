@@ -118,10 +118,16 @@ def delete_event(request, pk):
         return redirect('events')
     return render(request, 'home/delete_event.html', {'event': event})
 
+# def events_list(request):
+#     events = Event.objects.all().order_by('-created_at')  # Query all events
+#     is_staff = request.user.is_authenticated and (request.user.is_staff or request.user.groups.filter(name='Staff').exists())
+#     return render(request, 'home/events.html', {'events': events, 'is_staff': is_staff})
 def events_list(request):
-    events = Event.objects.all().order_by('-created_at')  # Query all events
+    events = Event.objects.all().order_by('event_date', '-created_at')  # Sort by event_date, NULL values last, then by created_at
     is_staff = request.user.is_authenticated and (request.user.is_staff or request.user.groups.filter(name='Staff').exists())
     return render(request, 'home/events.html', {'events': events, 'is_staff': is_staff})
+
+
 
 
 

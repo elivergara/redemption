@@ -14,6 +14,8 @@ class CustomUserCreationForm(UserCreationForm):
 class EventForm(forms.ModelForm):
     class Meta:
         model = Event
-        fields = ['title', 'description', 'image', 'pushpay_link']  # Added pushpay_link
-
+        fields = ['title', 'event_date', 'description', 'image', 'pushpay_link']  
+        widgets = {
+    'event_date': forms.DateTimeInput(attrs={'type': 'datetime-local'}),  # Allows input in datetime-local format
+}
 

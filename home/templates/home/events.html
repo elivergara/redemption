@@ -16,7 +16,6 @@
         {% if user.is_authenticated and user.is_staff %}
         <a href="{% url 'add_event' %}" class="btn btn-primary mb-3">Add New Event</a>
         {% endif %}
-
         <div class="row">
             {% for event in events %}
             <div class="col-md-6 mb-4">
@@ -25,12 +24,20 @@
                     <img src="{{ event.image.url }}" class="card-img-top" style="height: 250px; object-fit: cover;">
                     {% endif %}
                     <div class="card-body">
-                        <h5 class="card-title">{{ event.title }}</h5>
+                        <h4 class="card-title">{{ event.title }}</h4>
+                        <!-- Display the event date or "No date set" if event_date is None -->
+                        <h6 class="event-date">
+                            {% if event.event_date %}
+                            Event Date: {{ event.event_date|date:"F j, Y, g:i a" }} <!-- Format the date -->
+                            {% else %}
+                            Event Date: No date set
+                            {% endif %}
+                        </h6>
                         <p class="card-text">{{ event.description|linebreaks|truncatechars:450 }}</p>
                         {% if event.pushpay_link %}
-                        <p><a href="{{ event.pushpay_link }}" target="_self">Register Here!</a></p>
+                        <p class="register-link"><a href="{{ event.pushpay_link }}" target="_self">Register Here!</a></p>
                         {% endif %}
-                        <p class="small-text">Published on: {{ event.created_at }}</p>
+                        <p class="small-text">Published on: {{ event.created_at|date:"F j, Y, g:i a" }}</p>
                         {% if user.is_authenticated and user.is_staff %}
                         <a href="{% url 'edit_event' event.pk %}" class="btn btn-secondary">Edit</a>
                         <a href="{% url 'delete_event' event.pk %}" class="btn btn-danger">Delete</a>

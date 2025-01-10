@@ -8,40 +8,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latest Sermon | Redemption Mesa</title>
+    <title>Latest Sermons | Redemption Mesa</title>
     <link rel="stylesheet" href="static/style.css">
 </head>
 
 <body>
 
-    {% block title %}Watch our stream!{% endblock %}
+    {% block title %}Watch online!{% endblock %}
     {% block content %}
     <div class="container mt-5">
-        <h2>Watch our stream!</h2>
+        <h2>Watch our streams!</h2>
         {% if user.is_authenticated and user.is_staff %}
         <div class="m-3">
             <a href="{% url 'add_sermon' %}" class="btn btn-success">Add New</a>
         </div>
         {% endif %}
-        {% if sermon %}
-        <div class="sermon-video">
-            <h3>{{ sermon.title }}</h3>
-            <div>
-                {{ sermon.embed_link|safe }}
-            </div>
-        </div>
 
-        {% if user.is_authenticated and user.is_staff %}
-        <!-- Edit and Delete buttons -->
-        <div class="m-3">
-            <a href="{% url 'edit_sermon' sermon.pk %}" class="btn btn-secondary">Edit</a>
-            <a href="{% url 'delete_sermon' sermon.pk %}" class="btn btn-danger">Delete</a>
+        {% if sermon_1 %}
+        <div class="sermon-video">
+            <h3>{{ sermon_1.title }}</h3>
+            <div>
+                {{ sermon_1.embed_link|safe }}
+            </div>
+            {% if user.is_authenticated and user.is_staff %}
+            <!-- Edit and Delete buttons for sermon_1 -->
+            <div class="m-3">
+                <a href="{% url 'edit_sermon' sermon_1.pk %}" class="btn btn-secondary">Edit</a>
+                <a href="{% url 'delete_sermon' sermon_1.pk %}" class="btn btn-danger">Delete</a>
+            </div>
+            {% endif %}
         </div>
-        {% endif %}
-        
         {% else %}
         <p>Stream is not yet available. Please check back later.</p>
         {% endif %}
+        <br>
+        <hr>
+        
+        {% if sermon_2 %}
+        <div class="sermon-video">
+            <h3>{{ sermon_2.title }}</h3>
+            <div>
+                {{ sermon_2.embed_link|safe }}
+            </div>
+            {% if user.is_authenticated and user.is_staff %}
+            <!-- Edit and Delete buttons for sermon_2 -->
+            <div class="m-3">
+                <a href="{% url 'edit_sermon' sermon_2.pk %}" class="btn btn-secondary">Edit</a>
+                <a href="{% url 'delete_sermon' sermon_2.pk %}" class="btn btn-danger">Delete</a>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+
     </div>
 
     <div class="d-flex justify-content-center align-items-center mt-3 ">

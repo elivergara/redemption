@@ -24,9 +24,22 @@ def add_sermon(request):
     return render(request, 'sermons/add_sermon.html', {'form': form})
 
 
+# def latest_sermon(request):
+#     latest = Sermon.objects.order_by('-created_at').first()
+#     return render(request, 'sermons/latest_sermon.html', {'sermon': latest})
+
 def latest_sermon(request):
-    latest = Sermon.objects.order_by('-created_at').first()
-    return render(request, 'sermons/latest_sermon.html', {'sermon': latest})
+    # Fetch the two most recent sermons
+    sermons = Sermon.objects.all().order_by('-created_at')[:2]  # Get the two most recent sermons
+    sermon_1 = sermons[0] if sermons else None
+    sermon_2 = sermons[1] if len(sermons) > 1 else None
+
+    return render(request, 'sermons/latest_sermon.html', {
+        'sermon_1': sermon_1,
+        'sermon_2': sermon_2,
+    })
+
+
 
 
 # Edit sermon view

@@ -13,6 +13,7 @@ class Event(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to='static/images/events/', blank=True, null=True)  # Optional image field
     pushpay_link = models.URLField(max_length=500, blank=True, null=True)  # New optional hyperlink field
+    event_date = models.DateTimeField(null=True, blank=True) 
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
 
