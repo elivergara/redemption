@@ -52,6 +52,10 @@ margin-top: 1vh;
     height: 35px !important;
 }
 
+.nav-link {
+    color: #29a653; /* Adjust color */
+
+}
 
 .banners {
     display: flex;
