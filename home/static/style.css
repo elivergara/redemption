@@ -5,6 +5,9 @@ body {
     padding-top: 0%;
     
 }
+.fa-solid {
+    display:block !important;
+}
 
 .section-background {
     background-image: url('/static/images/Photo+(35+of+41)-min.jpg');
@@ -53,7 +56,7 @@ margin-top: 1vh;
 }
 
 .nav-link {
-    color: #29a653; /* Adjust color */
+    color: #29a653; /* Adjust color 29a653 */
 
 }
 
@@ -212,6 +215,10 @@ hr {
 
 /* Footer Social icons */
 /* Remove underlines from social media icons */
+.social-icons .fa-solid {
+    display:inline-block !important;
+}
+
 .social-icons a {
     text-decoration: none; /* Removes the underline */
   }
@@ -237,3 +244,15 @@ hr {
     color: #ff0000; /* YouTube red */
   }
   
+.fa-solid {
+    display: block !important;
+}
+.fa-solid {
+    display: block !important;
+}
+.fa-solid {
+    display: block !important;
+}
+.fa-solid {
+    display: block !important;
+}
