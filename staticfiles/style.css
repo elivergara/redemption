@@ -13,7 +13,7 @@ body {
     background-image: url('/static/images/Photo+(35+of+41)-min.jpg');
     background-size: cover;
     background-position: center;
-    height: 40vh;
+    height: 38vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -33,7 +33,8 @@ text-transform: uppercase;
 text-align: center;
 font-weight: bolder;
 vertical-align: middle;
-margin-top: 10vh;
+margin-top: 5vh;
+font-size:xx-large;
 }
 
 h2 {
@@ -63,15 +64,15 @@ margin-top: 1vh;
 .banners {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center banners horizontally */
+    align-items: center; /* Center bannerheight: 8vh;s horizontally */
     gap: 2px; /* Space between banners */
 }
 
 .banner img {
     display: block;
     margin: 0 auto;
-    max-width: 1000px;
-    width: 100%;
+    max-width: 100%;
+
 }
 
 .card-body {

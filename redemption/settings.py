@@ -28,7 +28,7 @@ DEBUG = False
 # STATICFILES_DIRS works when DEBUG=True
 
 # For production
-# DEBUG = False
+# DEBUG = True
 # Run collectstatic before deployment
 
 
