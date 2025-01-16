@@ -5,45 +5,50 @@
 <div class="container-fluid" id="bg-img">
     <div class="section-background">
         <div class="d-flex align-items-center justify-content-center no-gutters " style="height: 49vh;">
-            <h1 class="text-right col-8">Toda la vida es toda para Jesús <br> <br>All of Life is All for Jesus</h1>
+            <h1 class="text-right col-8">Toda la vida es toda para Jesús <br>All of Life is All for Jesus</h1>
         </div>
     </div>
 </div>
 
 <!-- Quick Links -->
-<div class="banners">
-    <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters  ">
-        <a href="{% url 'events' %}">
-            <img src="{% static 'images/banners/events2.png' %}" alt="Events Banner">
-        </a>
-    </div>
-    <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
-        <a href="{% url 'latest_sermon' %}">
-            <img src="{% static 'images/banners/watch2.png' %}" alt="Latest Sermon Banner">
-        </a>
-    </div>
-    <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
-        <a href="{% url 'about' %}">
-            <img src="{% static 'images/banners/about2.png' %}" alt="About Us" >
-        </a>
-    </div>
+<div class="container">
+    <div class="banners">
+        <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters  ">
+            <a href="{% url 'events' %}">
+                <img src="{% static 'images/banners/events2.png' %}" alt="Events Banner">
+            </a>
+        </div>
+        <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
+            <a href="{% url 'latest_sermon' %}">
+                <img src="{% static 'images/banners/watch2.png' %}" alt="Latest Sermon Banner">
+            </a>
+        </div>
+        <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
+            <a href="{% url 'about' %}">
+                <img src="{% static 'images/banners/about2.png' %}" alt="About Us">
+            </a>
+        </div>
 
-    <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
-        <a href="https://redemptionaz.ccbchurch.com/goto/forms/2344/responses/new">
-            <img src="{% static 'images/banners/connect2.png' %}" alt="Connect">
-        </a>
-    </div>
+        <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
+            <a href="https://redemptionaz.ccbchurch.com/goto/forms/2344/responses/new">
+                <img src="{% static 'images/banners/connect2.png' %}" alt="Connect">
+            </a>
+        </div>
 
-    <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
-        <a href="{% url 'notes' %}">
-            <img src="{% static 'images/banners/notes2.png' %}" alt="Blog Banner" >
-        </a>
-    </div>
+        <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
+            <a href="{% url 'notes' %}">
+                <img src="{% static 'images/banners/notes2.png' %}" alt="Blog Banner">
+            </a>
+        </div>
 
-    <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
-        <a href="https://pushpay.com/g/redemptionmesa">
-            <img src="{% static 'images/banners/give2.png' %}" alt="Latest Sermon Banner">
-        </a>
+        <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
+            <a href="https://pushpay.com/g/redemptionmesa">
+                <img src="{% static 'images/banners/give2.png' %}" alt="Latest Sermon Banner">
+            </a>
+        </div>
     </div>
 </div>
+
+<!-- Latest Sermons -->
+<div class="container-
 {% endblock %}

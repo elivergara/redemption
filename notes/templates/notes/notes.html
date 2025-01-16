@@ -6,28 +6,33 @@
 <div class="container mt-5">
     <h2>Notes</h2>
     {% if user.is_authenticated and user.is_staff %}
-        <a href="{% url 'add_note' %}" class="btn btn-primary mb-3">Add Note</a>
+    <a href="{% url 'add_note' %}" class="btn btn-primary mb-3">Add Note</a>
     {% endif %}
 
     <div class="row">
         {% for note in notes %}
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ note.title }}</h5>
-                        <p class="card-text">{{ note.content|linebreaks|truncatewords:500 }}</p>
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ note.title }}</h5>
+                    <p class="card-text">{{ note.content|linebreaks|truncatewords:1500 }}</p>
+                    {% if note.notes_link %}
+                    <p>Link: <a href="{{ note.notes_link }}" target="_self">{{ note.notes_link }}</a></p>
+                {% endif %}
+                
 
 
-                        <small class="text-muted">By {{ note.author.username }} on {{ note.created_at|date:"M d, Y" }}</small>
-                        {% if user.is_authenticated and user.is_staff %}
-                            <div class="mt-2">
-                                <a href="{% url 'edit_note' note.id %}" class="btn btn-warning btn-sm">Edit</a>
-                                <a href="{% url 'delete_note' note.id %}" class="btn btn-danger btn-sm">Delete</a>
-                            </div>
-                        {% endif %}
+                    <small class="text-muted">By {{ note.author.first_name }} {{ note.author.last_name }}
+                        on {{ note.created_at|date:"M d, Y" }}</small>
+                    {% if user.is_authenticated and user.is_staff %}
+                    <div class="mt-2">
+                        <a href="{% url 'edit_note' note.id %}" class="btn btn-warning btn-sm">Edit</a>
+                        <a href="{% url 'delete_note' note.id %}" class="btn btn-danger btn-sm">Delete</a>
                     </div>
+                    {% endif %}
                 </div>
             </div>
+        </div>
         {% endfor %}
     </div>
 </div>

@@ -8,4 +8,6 @@ from .models import Note
 
 @admin.register(Note)
 class NoteAdmin(admin.ModelAdmin):
-    list_display = ('title', 'created_at', 'author')
+    list_display = ('title', 'created_at', 'author', 'updated_at', 'notes_link')
+
+

@@ -10,3 +10,4 @@ class EventAdmin(admin.ModelAdmin):
     search_fields = ('title', 'description', 'pushpay_link')  # Searchable fields
     list_filter = ('created_at',)  # Filters in the admin sidebar
 
+
