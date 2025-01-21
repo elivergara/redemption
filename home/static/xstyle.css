@@ -1,0 +1,262 @@
+body {
+    background-color: #000000 !important;
+    background-size: cover;
+    margin: 0; /* Remove default body margins */
+    padding-top: 0%;
+    
+}
+.fa-solid {
+    display:block !important;
+}
+
+.section-background {
+    background-image: url('/static/images/Photo+(35+of+41)-min.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 33vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+#bg-img {
+    --bs-gutter-x: 0 !important;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+h1 {
+color: #e7e7e7;
+text-transform: uppercase;
+text-align: center;
+font-weight: bolder;
+vertical-align: middle;
+margin-top: 5vh;
+font-size:xx-large;
+}
+
+h2 {
+color: #e7e7e7;
+text-transform: uppercase;
+text-align: left;
+font-weight: bolder;
+vertical-align: middle;
+margin-top: 1vh;
+}
+
+
+
+ h3, h4, p {
+    color: #e7e7e7;
+}
+
+.navbar-brand img {
+    height: 35px !important;
+}
+
+.nav-link {
+    color: #29a653; /* Adjust color 29a653 */
+
+}
+
+.banners {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center bannerheight: 8vh;s horizontally */
+    gap: 2px; /* Space between banners */
+}
+
+.banner img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+
+}
+
+.card-body {
+    background-color: #293541;
+    color: #e7e7e7;
+    padding-bottom: 10px;
+}
+p .card-text {
+    background-color: #242c35;
+    color: #ffffff !important;
+}
+
+.form-check-label {
+    color: #e7e7e7;
+}
+
+.text-center {
+    background-color: #2b3035;
+    border-top: none; /* Remove top border or divider */
+    margin-top: 10px; /* Adjust spacing above if needed */
+    max-width:90%;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.text-muted {
+    color: #a7a7a7 !important;
+}
+
+hr {
+    color: aliceblue;
+}
+.small-text {
+    font-size: 0.8em; /* Adjust the size as needed */
+    color: rgb(176, 176, 176); /* Optional: Add a lighter color for differentiation */
+}
+
+.fa-youtube {
+    font-size: 2rem; /* Adjust size */
+    color: rgb(255, 60, 60); /* Adjust color */
+    margin-right: 10px; /* Optional spacing */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    transition: 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.fa-youtube:hover {
+    color: rgb(83, 0, 0); /* Changes icon color on hover */
+}
+
+.card-title {
+    color:#FFD700;
+}
+.event-date {
+    font-weight: bold;
+    color: #aaffaa; /*  color */
+}
+/* Style for the Register Link */
+.register-link a {
+    color: #8af1ff; /* White text color */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Makes the text bold */
+}
+
+/* Optional: Change the link color on hover */
+.register-link a:hover {
+    color: #FFD700; /* Yellow color on hover */
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+
+
+#about_us {
+    color: #f5f5f5; /* A shade of white */
+    background-color: #000; /* Optional: Add a dark background for contrast */
+    padding: 2vh; /* Optional: Add some padding for spacing */
+}
+
+#about-text h4, p {
+    color: #f5f5f5;
+}
+
+
+/* Card Styling */
+.contact-card {
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 0px;
+    border-radius: 0;
+}
+
+/* Logo Styling */
+.logo-container img {
+    max-width: 25vh;
+}
+
+/* Text Styling */
+.text-container {
+    color: #f5f5f5;
+}
+
+.contact-title a {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.contact-title a:hover {
+    text-decoration: underline;
+}
+
+.contact-email a,
+.contact-location {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.contact-email a:hover {
+    text-decoration: underline;
+}
+
+/* Location Link Styling */
+.location-link {
+    color: #79ccff;
+    text-decoration: none;
+}
+
+.location-link:hover {
+    text-decoration: underline;
+}
+
+.fa-location-dot {
+    font-size: 1.5rem; /* Adjust size */
+    color: #29a653; /* Adjust color */
+    margin-right: 10px; /* Optional spacing */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+
+/* Footer Social icons */
+/* Remove underlines from social media icons */
+.social-icons .fa-solid {
+    display:inline-block !important;
+}
+
+.social-icons a {
+    text-decoration: none; /* Removes the underline */
+  }
+  
+  .social-icons i {
+    vertical-align: middle; /* Ensures icons are vertically aligned correctly */
+  }
+  
+/* Add this to your CSS file or inside a <style> tag in base.html */
+.social-icons .fa-facebook-square {
+    color: #1877f2 !important; /* Facebook blue */
+  }
+  
+  .social-icons .fa-instagram {
+    color: #e4405f; /* Instagram pink */
+  }
+  
+  .social-icons .fa-microphone {
+    color: #9fc49b; /* Apple color */
+  }
+  
+  .social-icons .fa-youtube {
+    color: #ff0000; /* YouTube red */
+  }
+  
+.fa-solid {
+    display: block !important;
+}
+.fa-solid {
+    display: block !important;
+}
+.fa-solid {
+    display: block !important;
+}
+.fa-solid {
+    display: block !important;
+}
