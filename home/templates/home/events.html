@@ -14,7 +14,7 @@
     <div class="container mt-2">
         <h2>Events</h2>
         {% if user.is_authenticated and user.is_staff %}
-        <a href="{% url 'add_event' %}" class="btn btn-primary mb-3">Add New Event</a>
+        <a href="{% url 'home:add_event' %}" class="btn btn-primary mb-3">Add New Event</a>
         {% endif %}
         <div class="row">
             {% for event in events %}
@@ -39,8 +39,8 @@
                         {% endif %}
                         <p class="small-text">Published on: {{ event.created_at|date:"F j, Y, g:i a" }}</p>
                         {% if user.is_authenticated and user.is_staff %}
-                        <a href="{% url 'edit_event' event.pk %}" class="btn btn-secondary">Edit</a>
-                        <a href="{% url 'delete_event' event.pk %}" class="btn btn-danger">Delete</a>
+                        <a href="{% url 'home:edit_event' event.pk %}" class="btn btn-secondary">Edit</a>
+                        <a href="{% url 'home:delete_event' event.pk %}" class="btn btn-danger">Delete</a>
                         {% endif %}
                     </div>
                 </div>

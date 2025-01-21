@@ -19,9 +19,9 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('', include('home.urls')),
     path('sermons/', include('sermons.urls')),
     path('notes/', include('notes.urls')),
     path('news/', include('news.urls') ),
-    path('planner/', include('planner.urls') ),
+    path('', include('home.urls', namespace='home')),  # Namespace for home app
+    path('planner/', include('planner.urls', namespace='planner')),  # Namespace for planner app
 ]

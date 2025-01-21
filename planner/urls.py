@@ -1,6 +1,9 @@
 from django.urls import path
 from . import views
 
+
+app_name = 'planner'  # Add namespace
+
 urlpatterns = [
     path('', views.planner_list, name='planner_list'),
     path('add/', views.add_event, name='add_event'),

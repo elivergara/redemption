@@ -8,7 +8,7 @@
     <div class="card">
         <div class="card-body">
             {% if user.is_authenticated and user.is_staff %}
-            <a href="{% url 'add_event' %}" class="btn btn-primary mb-3">Add to calendar</a>
+            <a href="{% url 'planner:add_event' %}" class="btn btn-primary mb-3">Add to calendar</a>
             {% endif %}
 
             <div class="row">
@@ -30,8 +30,8 @@
                         More info:{{ event.contact}}
                     </li>
                     {% if user.is_authenticated and user.is_staff %}
-                    <a href="{% url 'edit_event' event.pk %}" class="btn btn-primary">Edit</a>
-                    <a href="{% url 'delete_event' event.pk %}" class="btn btn-danger">Delete</a>
+                    <a href="{% url 'planner:edit_event' event.pk %}" class="btn btn-primary">Edit</a>
+                    <a href="{% url 'planner:delete_event' event.pk %}" class="btn btn-danger">Delete</a>
                     <hr>
                     {% endif %}
                     {% endfor %}

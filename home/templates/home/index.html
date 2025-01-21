@@ -14,7 +14,7 @@
 <div class="container">
     <div class="banners">
         <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters  ">
-            <a href="{% url 'events' %}">
+            <a href="{% url 'home:events' %}">
                 <img src="{% static 'images/banners/events2.png' %}" alt="Events Banner">
             </a>
         </div>
@@ -31,7 +31,7 @@
             </a>
         </div>
         <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
-            <a href="{% url 'about' %}">
+            <a href="{% url 'home:about' %}">
                 <img src="{% static 'images/banners/about2.png' %}" alt="About Us">
             </a>
         </div>
@@ -56,7 +56,7 @@
         </div>
 
         <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
-            <a href="{% url 'planner_list' %}">
+            <a href="{% url 'planner:planner_list' %}">
             <img src="{% static 'images/banners/calendar2.png' %}" alt="Calendar Banner">
             </a>
         </div>
