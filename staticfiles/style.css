@@ -13,7 +13,7 @@ body {
     background-image: url('/static/images/Photo+(35+of+41)-min.jpg');
     background-size: cover;
     background-position: center;
-    height: 38vh;
+    height: 33vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -93,6 +93,9 @@ p .card-text {
     background-color: #2b3035;
     border-top: none; /* Remove top border or divider */
     margin-top: 10px; /* Adjust spacing above if needed */
+    max-width:90%;
+    padding: 8px;
+    border-radius: 8px;
 }
 
 .text-muted {
