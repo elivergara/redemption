@@ -58,7 +58,7 @@ def notes(request):
 
 def custom_logout(request):
     logout(request)  # Logs out the user
-    return redirect('login')  # Redirect to login page
+    return redirect('home:login')  # Redirect to login page
 
 @login_required
 def update_subscription(request):
@@ -91,7 +91,7 @@ def add_event(request):
             event = form.save(commit=False)
             event.created_by = request.user
             event.save()
-            return redirect('events')
+            return redirect('home:events')
     else:
         form = EventForm()
     return render(request, 'add_event.html', {'form': form})
@@ -104,7 +104,7 @@ def edit_event(request, pk):
         form = EventForm(request.POST, request.FILES, instance=event)
         if form.is_valid():
             form.save()
-            return redirect('events')
+            return redirect('home:events')
     else:
         form = EventForm(instance=event)
     return render(request, 'home/edit_event.html', {'form': form, 'event': event})
@@ -115,7 +115,7 @@ def delete_event(request, pk):
     event = get_object_or_404(Event, pk=pk)
     if request.method == 'POST':
         event.delete()
-        return redirect('events')
+        return redirect('home:events')
     return render(request, 'home/delete_event.html', {'event': event})
 
 # def events_list(request):

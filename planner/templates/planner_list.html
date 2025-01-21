@@ -12,8 +12,8 @@
             {% endif %}
 
             <div class="row">
-
                 <ul class="ms-3">
+                    {% if events %}
                     {% for event in events %}
                     <li><strong>{{ event.title }}</strong> 
                         <br> {{ event.description }}
@@ -27,7 +27,7 @@
                             {% else %} Free
                             {% endif %}
                         <br>
-                        More info:{{ event.contact}}
+                        More info: {{ event.contact }}
                     </li>
                     {% if user.is_authenticated and user.is_staff %}
                     <a href="{% url 'planner:edit_event' event.pk %}" class="btn btn-primary">Edit</a>
@@ -35,9 +35,10 @@
                     <hr>
                     {% endif %}
                     {% endfor %}
-
+                    {% else %}
+                    Nothing in the calendar yet. Check back later.
+                    {% endif %}
                 </ul>
-
             </div>
         </div>
     </div>

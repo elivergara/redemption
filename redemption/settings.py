@@ -24,7 +24,7 @@ SECRET_KEY = "django-insecure-0r6$vpo7t%gx+aov816)faxy9tuf1!390)6w$2$g+$x8b17w#_
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # For local development
-DEBUG = True
+DEBUG = False
 # STATICFILES_DIRS works when DEBUG=True
 
 # For production
@@ -67,7 +67,7 @@ ROOT_URLCONF = "redemption.urls"
 import os
 
 TEMPLATES = [
-    {
+    {Nothing in the calendar yet. Check back later.
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
         "APP_DIRS": True,

@@ -13,7 +13,7 @@ def add_event(request):
         form = PlannerEventForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('planner_list')
+            return redirect('planner:planner_list')
     else:
         form = PlannerEventForm()
     return render(request, 'add_event.html', {'form': form})
@@ -25,7 +25,7 @@ def edit_event(request, pk):
         form = PlannerEventForm(request.POST, instance=event)
         if form.is_valid():
             form.save()
-            return redirect('planner_list')
+            return redirect('planner:planner_list')
     else:
         form = PlannerEventForm(instance=event)
     return render(request, 'edit_event.html', {'form': form, 'event': event})
@@ -35,5 +35,5 @@ def delete_event(request, pk):
     event = get_object_or_404(PlannerEvent, pk=pk)
     if request.method == 'POST':
         event.delete()
-        return redirect('planner_list')
+        return redirect('planner:planner_list')
     return render(request, 'delete_event.html', {'event': event})
