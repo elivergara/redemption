@@ -3,7 +3,7 @@
 {% block title %}Notes{% endblock %}
 
 {% block content %}
-<div class="container mt-5">
+<div class="container mt-2">
     <h2>Notes</h2>
     {% if user.is_authenticated and user.is_staff %}
     <a href="{% url 'add_note' %}" class="btn btn-primary mb-3">Add Note</a>

@@ -23,4 +23,5 @@ urlpatterns = [
     path('sermons/', include('sermons.urls')),
     path('notes/', include('notes.urls')),
     path('news/', include('news.urls') ),
+    path('planner/', include('planner.urls') ),
 ]

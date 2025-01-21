@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Notes{% endblock %}
+
+{% block content %}
+<div class="container mt-2 ">
+    <h2>Delete Event from Calendar</h2>
+    <p>Are you sure you want to delete </p><br> <h5>{{ event.title }}</h5><p>{{ event.description }}?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a href="{% url 'planner_list' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+    {% endblock %}

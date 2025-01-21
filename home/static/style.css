@@ -125,7 +125,21 @@ hr {
 }
 
 .card-title {
-  color: #FFD700;
+  color: #4f9bff;
+}
+
+.container h2 {
+  color: #4f9bff;
+}
+.container h5 {
+  color: #29a653;
+}
+.container p {
+  color: #e7e7e7;
+}
+
+strong {
+  color: #29a653;
 }
 
 .event-date {
@@ -146,7 +160,6 @@ hr {
 #about_us {
   color: #f5f5f5;
   background-color: #000000;
-  padding: 2vh;
 }
 
 #about-text h4, p {

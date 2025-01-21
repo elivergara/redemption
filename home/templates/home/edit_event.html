@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container mt-5">
+<div class="container mt-2">
     <h2>Edit Event: {{ event.title }}</h2>
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}

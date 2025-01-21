@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Edit calendar event</h2>
+<div class="container mt-2">
+
+<h5>{% if event %}Edit Event{% else %}Add New Event{% endif %}</h5>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Save</button>
+    <a href="{% url 'planner_list' %}" class="btn btn-secondary">Cancel</a>
+</form>
+</div>
+{% endblock %}

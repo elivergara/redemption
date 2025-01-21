@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>Are you sure you want to delete "{{ news.title }}"?</h2>
+
+
+<div class="container mt-2">
+    <h2>Delete Note</h2>
+    <p>Are you sure you want to delete {{ news.title }}?</p>
+
 <form method="post">
     {% csrf_token %}
     <button type="submit" class="btn btn-danger">Delete</button>

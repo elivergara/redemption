@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'sermons',
     'notes',
     'news',
+    'planner',
 
 ]
 
