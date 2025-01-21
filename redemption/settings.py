@@ -67,7 +67,7 @@ ROOT_URLCONF = "redemption.urls"
 import os
 
 TEMPLATES = [
-    {Nothing in the calendar yet. Check back later.
+    {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
         "APP_DIRS": True,
