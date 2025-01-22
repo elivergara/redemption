@@ -20,7 +20,7 @@
         <hr>
         <!-- Subscription Status -->
         <h4>Subscription</h4>
-        <form method="POST" action="{% url 'update_subscription' %}">
+        <form method="POST" action="{% url 'home:update_subscription' %}">
             {% csrf_token %}
             <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="subscribe_updates" name="subscribe_updates" 
@@ -33,7 +33,7 @@
         </form>
         <div>
         {% if user.is_authenticated and user.is_staff %}
-        <a href="{% url 'export_emails' %}" class="btn btn-success mt-3">Export Subscribed Emails</a>
+        <a href="{% url 'home:export_emails' %}" class="btn btn-success mt-3">Export Subscribed Emails</a>
         {% endif %}
         </div>
 
@@ -41,10 +41,10 @@
     
         <!-- Account Actions -->
         <h4>Update Password</h4>
-        <a href="{% url 'password_change' %}" class="btn btn-warning">Change Password</a><br>
+        <a href="{% url 'home:password_change' %}" class="btn btn-warning">Change Password</a><br>
         <hr>
         <div class="mt-2">
-            <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+            <a href="{% url 'home:logout' %}" class="btn btn-danger">Logout</a>
         </div>
     </div>
     {% endblock %}

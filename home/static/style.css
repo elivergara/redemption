@@ -19,6 +19,17 @@ body {
   padding: 0;
 }
 
+li {
+  color: #e7e7e7;
+}
+
+.card {
+  max-width: 98%;
+  margin: 0 auto;
+  padding: 0.05rem;
+  border-radius: 8px;
+}
+
 #bg-img {
   --bs-gutter-x: 0 !important;
   padding-right: 0;

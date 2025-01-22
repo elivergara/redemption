@@ -75,7 +75,7 @@ def update_subscription(request):
         from django.contrib import messages
         messages.success(request, "Your preferences have been updated.")
         
-    return redirect('profile')  # Redirect back to the profile page
+    return redirect('home:profile')  # Redirect back to the profile page
 
 
 ######### Events Adding/Editing/Deleting Section
