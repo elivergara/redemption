@@ -10,7 +10,7 @@ from django.contrib.auth.models import Group
 from django.http import HttpResponse
 
 
-
+from django.contrib.auth.views import PasswordChangeView
 
 # Create your views here.
 from django.urls import reverse
@@ -22,7 +22,7 @@ def register(request):
             user = form.save()
             login(request, user)  # Auto-login
             messages.success(request, f'Account created for {user.username}!')
-            return redirect(reverse('profile'))
+            return redirect(reverse('home:profile'))
         else:
             print("Form errors:", form.errors)  # Debugging
     else:
