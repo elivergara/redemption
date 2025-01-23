@@ -149,7 +149,7 @@ hr {
   color: #e7e7e7;
 }
 
-strong {
+.row strong {
   color: #29a653;
 }
 
@@ -180,7 +180,7 @@ strong {
 .contact-card {
   max-width: 98%;
   margin: 0 auto;
-  padding: 0px;
+  padding: 0;
   border-radius: 0;
 }
 
