@@ -1,5 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.small-text {
+  color: rgb(175, 175, 175) !important;
+}
+
 body {
-  background-color: #000000 !important;
+  background-color: rgb(0, 0, 0) !important;
   background-size: cover;
   margin: 0;
   padding-top: 0;
@@ -20,7 +30,7 @@ body {
 }
 
 li {
-  color: #e7e7e7;
+  color: #ffffff;
 }
 
 .card {
@@ -37,7 +47,7 @@ li {
 }
 
 h1, h2 {
-  color: #e7e7e7;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: bolder;
   vertical-align: middle;
@@ -56,7 +66,7 @@ h2 {
 }
 
 h3, h4, p {
-  color: #e7e7e7;
+  color: #ffffff;
 }
 
 .navbar-brand img {
@@ -64,7 +74,7 @@ h3, h4, p {
 }
 
 .nav-link {
-  color: #29a653;
+  color: #24ce5d;
 }
 
 .banners {
@@ -79,25 +89,26 @@ h3, h4, p {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  border-radius: 0px;
 }
 
 .card-body {
-  background-color: #293541;
-  color: #e7e7e7;
+  background-color: #212529;
+  color: #ffffff;
   padding-bottom: 10px;
 }
 
 p .card-text {
-  background-color: #242c35;
+  background-color: #212529;
   color: #ffffff !important;
 }
 
 .form-check-label {
-  color: #e7e7e7;
+  color: #ffffff;
 }
 
 .text-center {
-  background-color: #2b3035;
+  background-color: #0e0e0e;
   border-top: none;
   margin-top: 10px;
   max-width: 90%;
@@ -106,16 +117,16 @@ p .card-text {
 }
 
 .text-muted {
-  color: #a7a7a7 !important;
+  color: rgb(175, 175, 175) !important;
 }
 
 hr {
-  color: aliceblue;
+  color: rgb(175, 175, 175);
 }
 
 .small-text {
   font-size: 0.8em;
-  color: rgb(176, 176, 176);
+  color: rgb(175, 175, 175);
 }
 
 .fa-youtube {
@@ -136,30 +147,30 @@ hr {
 }
 
 .card-title {
-  color: #4f9bff;
+  color: #92c1ff;
 }
 
 .container h2 {
-  color: #4f9bff;
+  color: #92c1ff;
 }
 .container h5 {
-  color: #29a653;
+  color: #24ce5d;
 }
 .container p {
-  color: #e7e7e7;
+  color: #ffffff;
 }
 
 .row strong {
-  color: #29a653;
+  color: #24ce5d;
 }
 
 .event-date {
   font-weight: bold;
-  color: #aaffaa;
+  color: #24ce5d;
 }
 
 .register-link a {
-  color: #8af1ff;
+  color: #6ae9ff;
   text-decoration: none;
   font-weight: bold;
 }
@@ -169,12 +180,12 @@ hr {
 }
 
 #about_us {
-  color: #f5f5f5;
-  background-color: #000000;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
 }
 
 #about-text h4, p {
-  color: #f5f5f5;
+  color: #ffffff;
 }
 
 .contact-card {
@@ -189,13 +200,13 @@ hr {
 }
 
 .text-container {
-  color: #f5f5f5;
+  color: #ffffff;
 }
 
 .contact-title a {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #f5f5f5;
+  color: #ffffff;
   text-decoration: none;
 }
 .contact-title a:hover {
@@ -204,7 +215,7 @@ hr {
 
 .contact-email a,
 .contact-location {
-  color: #f5f5f5;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -213,7 +224,7 @@ hr {
 }
 
 .location-link {
-  color: #8af1ff;
+  color: #6ae9ff;
   text-decoration: none;
 }
 .location-link:hover {
@@ -222,7 +233,7 @@ hr {
 
 .fa-location-dot {
   font-size: 1.5rem;
-  color: #29a653;
+  color: #24ce5d;
   margin-right: 10px;
   transition: color 0.3s ease;
 }

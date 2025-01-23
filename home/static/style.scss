@@ -1,11 +1,19 @@
+// css reset
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 // Variables
-$primary-color: #000000;
-$secondary-color: #e7e7e7;
-$highlight-color: #29a653;
-$accent-color: #4f9bff;
-$bg-color: #293541;
-$card-bg-color: #242c35;
-$link-color: #8af1ff;
+$primary-color:rgb(0, 0, 0);
+$text-color: #ffffff;
+$muted-text-color: rgb(175, 175, 175);
+$highlight-color: #24ce5d;
+$accent-color: #92c1ff;
+$bg-color: #0e0e0e;
+$card-bg-color: #212529;
+$link-color: #6ae9ff;
 $hover-color: #FFD700;
 $youtube-color: rgb(255, 60, 60);
 $youtube-hover-color: rgb(83, 0, 0);
@@ -34,8 +42,12 @@ $carousel-dark-control-icon-filter: invert(1) grayscale(100);
     color: $highlight-color;
   }
   p {
-    color: $secondary-color;
+    color: $text-color;
   }
+}
+
+.small-text {
+  color:$muted-text-color !important;
 }
 
 @mixin card-list-header($highlight-color) {
@@ -48,6 +60,8 @@ $carousel-dark-control-icon-filter: invert(1) grayscale(100);
 @function get-font-size($size) {
   @return $size * 1rem;
 }
+
+
 
 // Body Styles
 body {
@@ -74,7 +88,7 @@ body {
 }
 
 li {
-  color: $secondary-color;
+  color: $text-color;
 }
 
 // Card Styles
@@ -94,7 +108,7 @@ li {
 
 // Headings
 h1, h2 {
-  color: $secondary-color;
+  color: $text-color;
   text-transform: uppercase;
   font-weight: bolder;
   vertical-align: middle;
@@ -113,7 +127,7 @@ h2 {
 }
 
 h3, h4, p {
-  color: $secondary-color;
+  color: $text-color;
 }
 
 // Navbar Brand
@@ -137,28 +151,29 @@ h3, h4, p {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  border-radius: 0px;
 }
 
 // Card Body
 .card-body {
-  background-color: $bg-color;
-  color: $secondary-color;
+  background-color: $card-bg-color;
+  color: $text-color;
   padding-bottom: 10px;
 }
 
 p .card-text {
   background-color: $card-bg-color;
-  color: #ffffff !important;
+  color: $text-color !important;
 }
 
 // Form Check Labels
 .form-check-label {
-  color: $secondary-color;
+  color: $text-color;
 }
 
 // Text Centered
 .text-center {
-  background-color: #2b3035;
+  background-color: $bg-color;
   border-top: none;
   margin-top: 10px;
   max-width: 90%;
@@ -168,18 +183,18 @@ p .card-text {
 
 // Text Muted
 .text-muted {
-  color: #a7a7a7 !important;
+  color: $muted-text-color !important;
 }
 
 // Horizontal Rule
 hr {
-  color: aliceblue;
+  color: $muted-text-color;
 }
 
 // Small Text
 .small-text {
   font-size: 0.8em;
-  color: rgb(176, 176, 176);
+  color: $muted-text-color;
 }
 
 // YouTube Icon Styling
@@ -216,7 +231,7 @@ hr {
 // Event Date
 .event-date {
   font-weight: bold;
-  color: #aaffaa;
+  color: $highlight-color;
 }
 
 // Register Link
@@ -232,12 +247,12 @@ hr {
 
 // About Us Section
 #about_us {
-  color: #f5f5f5;
+  color: $text-color;
   background-color: $primary-color;
 }
 
 #about-text h4, p {
-  color: #f5f5f5;
+  color: $text-color;
 }
 
 // Contact Card
@@ -255,13 +270,13 @@ hr {
 
 // Contact Text
 .text-container {
-  color: #f5f5f5;
+  color: $text-color;
 }
 
 .contact-title a {
   font-weight: bold;
   font-size: get-font-size(1.2);
-  color: #f5f5f5;
+  color: $text-color;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -270,7 +285,7 @@ hr {
 
 .contact-email a,
 .contact-location {
-  color: #f5f5f5;
+  color: $text-color;
   text-decoration: none;
 }
 
