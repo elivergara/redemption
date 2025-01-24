@@ -1,262 +1,267 @@
-body {
-    background-color: #000000 !important;
-    background-size: cover;
-    margin: 0; /* Remove default body margins */
-    padding-top: 0%;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.small-text {
+  color: rgb(175, 175, 175) !important;
+}
+
+body {
+  background-color: rgb(0, 0, 0) !important;
+  background-size: cover;
+  margin: 0;
+  padding-top: 0;
+}
+
 .fa-solid {
-    display:block !important;
+  display: block !important;
 }
 
 .section-background {
-    background-image: url('/static/images/Photo+(35+of+41)-min.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 33vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  background-image: url("/static/images/Photo+(35+of+41)-min.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 33vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
+li {
+  color: #ffffff;
+}
+
+.card {
+  max-width: 98%;
+  margin: 0 auto;
+  padding: 0.05rem;
+  border-radius: 8px;
 }
 
 #bg-img {
-    --bs-gutter-x: 0 !important;
-    padding-right: 0;
-    padding-left: 0;
+  --bs-gutter-x: 0 !important;
+  padding-right: 0;
+  padding-left: 0;
 }
 
+h1, h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bolder;
+  vertical-align: middle;
+  font-family: Poppins, sans-serif;
+}
 
 h1 {
-color: #e7e7e7;
-text-transform: uppercase;
-text-align: center;
-font-weight: bolder;
-vertical-align: middle;
-margin-top: 5vh;
-font-size:xx-large;
+  text-align: center;
+  margin-top: 5vh;
+  font-size: 2rem;
 }
 
 h2 {
-color: #e7e7e7;
-text-transform: uppercase;
-text-align: left;
-font-weight: bolder;
-vertical-align: middle;
-margin-top: 1vh;
+  text-align: left;
+  margin-top: 1vh;
 }
 
-
-
- h3, h4, p {
-    color: #e7e7e7;
+h3, h4, p {
+  color: #ffffff;
 }
 
 .navbar-brand img {
-    height: 35px !important;
+  height: 35px !important;
 }
 
 .nav-link {
-    color: #29a653; /* Adjust color 29a653 */
-
+  color: #24ce5d;
 }
 
 .banners {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center bannerheight: 8vh;s horizontally */
-    gap: 2px; /* Space between banners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .banner img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 0px;
 }
 
 .card-body {
-    background-color: #293541;
-    color: #e7e7e7;
-    padding-bottom: 10px;
+  background-color: #212529;
+  color: #ffffff;
+  padding-bottom: 10px;
 }
+
 p .card-text {
-    background-color: #242c35;
-    color: #ffffff !important;
+  background-color: #212529;
+  color: #ffffff !important;
 }
 
 .form-check-label {
-    color: #e7e7e7;
+  color: #ffffff;
 }
 
 .text-center {
-    background-color: #2b3035;
-    border-top: none; /* Remove top border or divider */
-    margin-top: 10px; /* Adjust spacing above if needed */
-    max-width:90%;
-    padding: 8px;
-    border-radius: 8px;
+  background-color: #0e0e0e;
+  border-top: none;
+  margin-top: 10px;
+  max-width: 90%;
+  padding: 8px;
+  border-radius: 8px;
 }
 
 .text-muted {
-    color: #a7a7a7 !important;
+  color: rgb(175, 175, 175) !important;
 }
 
 hr {
-    color: aliceblue;
+  color: rgb(175, 175, 175);
 }
+
 .small-text {
-    font-size: 0.8em; /* Adjust the size as needed */
-    color: rgb(176, 176, 176); /* Optional: Add a lighter color for differentiation */
+  font-size: 0.8em;
+  color: rgb(175, 175, 175);
 }
 
 .fa-youtube {
-    font-size: 2rem; /* Adjust size */
-    color: rgb(255, 60, 60); /* Adjust color */
-    margin-right: 10px; /* Optional spacing */
-    transition: color 0.3s ease; /* Smooth hover effect */
+  font-size: 2rem;
+  color: rgb(255, 60, 60);
+  margin-right: 10px;
+  transition: color 0.3s ease;
 }
 
 .card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
-    transform: scale(1.05); /* Slightly enlarges the card on hover */
-    transition: 0.3s ease-in-out; /* Smooth hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+  transition: 0.3s ease-in-out;
 }
 
 .fa-youtube:hover {
-    color: rgb(83, 0, 0); /* Changes icon color on hover */
+  color: rgb(83, 0, 0);
 }
 
 .card-title {
-    color:#FFD700;
+  color: #92c1ff;
 }
+
+.container h2 {
+  color: #92c1ff;
+}
+.container h5 {
+  color: #24ce5d;
+}
+.container p {
+  color: #ffffff;
+}
+
+.row strong {
+  color: #24ce5d;
+}
+
 .event-date {
-    font-weight: bold;
-    color: #aaffaa; /*  color */
+  font-weight: bold;
+  color: #24ce5d;
 }
-/* Style for the Register Link */
+
 .register-link a {
-    color: #8af1ff; /* White text color */
-    text-decoration: none; /* Removes underline */
-    font-weight: bold; /* Makes the text bold */
+  color: #6ae9ff;
+  text-decoration: none;
+  font-weight: bold;
 }
-
-/* Optional: Change the link color on hover */
 .register-link a:hover {
-    color: #FFD700; /* Yellow color on hover */
-    text-decoration: underline; /* Underline the link on hover */
+  color: #FFD700;
+  text-decoration: underline;
 }
-
-
 
 #about_us {
-    color: #f5f5f5; /* A shade of white */
-    background-color: #000; /* Optional: Add a dark background for contrast */
-    padding: 2vh; /* Optional: Add some padding for spacing */
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
 }
 
 #about-text h4, p {
-    color: #f5f5f5;
+  color: #ffffff;
 }
 
-
-/* Card Styling */
 .contact-card {
-    max-width: 98%;
-    margin: 0 auto;
-    padding: 0px;
-    border-radius: 0;
+  max-width: 98%;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 0;
 }
 
-/* Logo Styling */
 .logo-container img {
-    max-width: 25vh;
+  max-width: 25vh;
 }
 
-/* Text Styling */
 .text-container {
-    color: #f5f5f5;
+  color: #ffffff;
 }
 
 .contact-title a {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #f5f5f5;
-    text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-decoration: none;
 }
-
 .contact-title a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .contact-email a,
 .contact-location {
-    color: #f5f5f5;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .contact-email a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* Location Link Styling */
 .location-link {
-    color: #79ccff;
-    text-decoration: none;
+  color: #6ae9ff;
+  text-decoration: none;
 }
-
 .location-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .fa-location-dot {
-    font-size: 1.5rem; /* Adjust size */
-    color: #29a653; /* Adjust color */
-    margin-right: 10px; /* Optional spacing */
-    transition: color 0.3s ease; /* Smooth hover effect */
+  font-size: 1.5rem;
+  color: #24ce5d;
+  margin-right: 10px;
+  transition: color 0.3s ease;
 }
 
-
-/* Footer Social icons */
-/* Remove underlines from social media icons */
 .social-icons .fa-solid {
-    display:inline-block !important;
+  display: inline-block !important;
 }
 
 .social-icons a {
-    text-decoration: none; /* Removes the underline */
-  }
-  
-  .social-icons i {
-    vertical-align: middle; /* Ensures icons are vertically aligned correctly */
-  }
-  
-/* Add this to your CSS file or inside a <style> tag in base.html */
+  text-decoration: none;
+}
+
+.social-icons i {
+  vertical-align: middle;
+}
+
 .social-icons .fa-facebook-square {
-    color: #1877f2 !important; /* Facebook blue */
-  }
-  
-  .social-icons .fa-instagram {
-    color: #e4405f; /* Instagram pink */
-  }
-  
-  .social-icons .fa-microphone {
-    color: #9fc49b; /* Apple color */
-  }
-  
-  .social-icons .fa-youtube {
-    color: #ff0000; /* YouTube red */
-  }
-  
-.fa-solid {
-    display: block !important;
+  color: #1877f2 !important;
 }
-.fa-solid {
-    display: block !important;
+
+.social-icons .fa-instagram {
+  color: #e4405f;
 }
-.fa-solid {
-    display: block !important;
+
+.social-icons .fa-microphone {
+  color: #9fc49b;
 }
-.fa-solid {
-    display: block !important;
-}
+
+.social-icons .fa-youtube {
+  color: #ff0000;
+}/*# sourceMappingURL=style.css.map */
