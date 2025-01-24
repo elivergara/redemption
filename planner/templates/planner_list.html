@@ -28,7 +28,7 @@
                             {% endif %}
                         <br>
                         More info: {{ event.contact }}
-                    </li>
+                    </li><hr>
                     {% if user.is_authenticated and user.is_staff %}
                     <a href="{% url 'planner:edit_event' event.pk %}" class="btn btn-primary">Edit</a>
                     <a href="{% url 'planner:delete_event' event.pk %}" class="btn btn-danger">Delete</a>
