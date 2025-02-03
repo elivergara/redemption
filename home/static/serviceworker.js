@@ -1,7 +1,7 @@
-const CACHE_NAME = 'eg-app-cache-v5.2'; // Increment on each update
+const CACHE_NAME = 'eg-app-cache-v5.3'; // Increment on each update
 const urlsToCache = [
   '/', // Cache the homepage
-  '/static/style.css?v=5.2', // Versioned CSS URL
+  '/static/style.css?v=5.3', // Versioned CSS URL
   '/static/js/main.js', // JS file (update as needed)
   '/static/icons/icon-192x192.png', // App icon
   '/static/icons/icon-512x512.png'  // App icon
