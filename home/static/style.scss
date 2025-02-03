@@ -28,6 +28,7 @@ $carousel-dark-control-icon-filter: invert(1) grayscale(100);
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 @mixin transition($properties...) {
@@ -159,8 +160,9 @@ h3, h4, p {
 
 // Content Wrapper to Avoid Overlap
 .content {
-  margin-top: 60px; // Adjust this based on your navbar's height
+  margin-top: 45px; // Adjust this based on your navbar's height
   padding: 20px;
+
 }
 
 
