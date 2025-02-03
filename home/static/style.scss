@@ -130,6 +130,17 @@ h3, h4, p {
   color: $text-color;
 }
 
+// Navbar Container
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333; // Adjust this to your theme color
+  padding: 10px 20px;
+  z-index: 1000; // Keeps the navbar above other content
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Optional: Adds a subtle shadow for better visibility
+}
+
 // Navbar Brand
 .navbar-brand img {
   height: 35px !important;
@@ -138,7 +149,20 @@ h3, h4, p {
 // Nav Links
 .nav-link {
   color: $highlight-color;
+  text-decoration: none;
+  padding: 8px 12px;
+
+  &:hover {
+    color: lighten($highlight-color, 15%); // Optional hover effect
+  }
 }
+
+// Content Wrapper to Avoid Overlap
+.content {
+  margin-top: 60px; // Adjust this based on your navbar's height
+  padding: 20px;
+}
+
 
 // Banners
 .banners {
