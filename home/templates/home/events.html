@@ -33,9 +33,14 @@
                             Event Date: No date set
                             {% endif %}
                         </h6>
-                        <p class="card-text">{{ event.description|linebreaks|truncatechars:450 }}</p>
+                        <p class="card-text">{{ event.description|linebreaks|truncatechars:600 }}</p>
                         {% if event.pushpay_link %}
                         <p class="register-link"><a href="{{ event.pushpay_link }}" target="_self">Register Here!</a></p>
+                        {% endif %}
+                        {% if event.map_embed %}
+                        <div class="map-container mt-3" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
+                            {{ event.map_embed|safe }}
+                        </div>
                         {% endif %}
                         <p class="small-text">Published on: {{ event.created_at|date:"F j, Y, g:i a" }}</p>
                         {% if user.is_authenticated and user.is_staff %}

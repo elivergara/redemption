@@ -30,11 +30,13 @@ urlpatterns = [
         name='password_change_done'
     ),
     path('events/', views.events_list, name='events'),
-    path('about/', views.about, name='about'),  
+    # path('about/', views.about, name='about'),  
     path('events/add/', views.add_event, name='add_event'),
     path('events/edit/<int:pk>/', views.edit_event, name='edit_event'),
     path('events/delete/<int:pk>/', views.delete_event, name='delete_event'),
     path('export-emails/', views.export_emails, name='export_emails'),
+    path("about/", views.about, name="about"),
+    path("about/edit/", views.edit_about, name="edit_about"),
 
 
 

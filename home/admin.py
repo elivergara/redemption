@@ -3,6 +3,7 @@ from django.contrib import admin
 # Register your models here.
 
 from .models import Event  # Import your Event model
+from .models import AboutPage
 
 @admin.register(Event)
 class EventAdmin(admin.ModelAdmin):
@@ -11,3 +12,4 @@ class EventAdmin(admin.ModelAdmin):
     list_filter = ('created_at',)  # Filters in the admin sidebar
 
 
+admin.site.register(AboutPage)

@@ -20,12 +20,6 @@
         </div>
 
         <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
-            <a href="{% url 'news' %}">
-                <img src="{% static 'images/banners/news2.png' %}" alt="News Banner">
-            </a>
-        </div>
-
-        <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
             <a href="{% url 'latest_sermon' %}">
                 <img src="{% static 'images/banners/watch2.png' %}" alt="Latest Sermon Banner">
             </a>
@@ -33,6 +27,13 @@
         <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
             <a href="{% url 'home:about' %}">
                 <img src="{% static 'images/banners/about2.png' %}" alt="About Us">
+            </a>
+        </div>
+
+
+        <div class="banner m-1 d-flex align-items-center justify-content-center no-gutters ">
+            <a href="{% url 'news' %}">
+                <img src="{% static 'images/banners/news2.png' %}" alt="News Banner">
             </a>
         </div>
 

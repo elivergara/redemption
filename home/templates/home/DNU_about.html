@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<div class="container mt-2" id="about_us">
+    <h2>Redemption Mesa</h2>
+    <h6>We are One Family in Christ, Multicultural and Bilingual,
+        Gospel-centered and outward-focused.<br><br>
+        Somos Una familia en Cristo, Multicultural y Bilingüe,
+        centrada en el Evangelio y enfocada hacia el exterior.
+    </h6>
+
+    <hr>
+    <div class="container-fluid" id="about_us">
+        <h2>Sundays / Domingos:</h2>
+        <ul>
+            <li><strong>9:45am - 10:00am:</strong> Prayer time / Tiempo de Oración</li>
+            <li><strong>10:00am - 10:30am:</strong> Coffee & Fellowship / Café y Compañerismo</li>
+            <li><strong>10:30am</strong> Bilingual Service</li>
+        </ul>
+        <hr>
+
+        <div class="container mt-6">
+            <div class="card shadow-lg contact-card">
+                <div class="card-body align-items-center">
+                    <!-- Logo -->
+                    <div class="logo-container">
+                        <img src="{% static 'images/logos/Logo R Withe.png' %}" alt="Redemption Mesa Logo"
+                            class="img-fluid">
+                    </div>
+                    <!-- Text -->
+                    <div class="text-container ms-4">
+                        <p class="contact-title">
+                            <a href="https://mesa.redemptionaz.com/">Redemption Mesa</a>
+                        </p>
+                        <p class="contact-email">
+                            <a href="mailto:mesa@redemptionaz.com">mesa@redemptionaz.com</a>
+                        </p>
+                        <p class="contact-location">Directions:</p>
+                    </div>
+                    <!-- Location -->
+                    <div class="text-container ms-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="https://www.google.com/maps?q=1818+E+Southern+Ave+Suite+5+Mesa+AZ+85204"
+                            target="_blank" class="location-link">
+                            1818 E Southern Ave. Suite 5, Mesa, AZ 85204
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Added text blocks here -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="bg-dark p-4 rounded" id="about-text">
+                    <h4 class="mb-3">Our Mission</h4>
+                    <p>
+                        We gather every week to focus — or refocus — on the truth of God’s word and the grace we have
+                        through Jesus. <br>
+                        We proclaim God’s truth, submitting ourselves to it, seeking to be transformed. <br>
+                        We collectively worship, not as disconnected individuals but as a community, through music,
+                        teaching, prayer, and sacraments.
+                    </p>
+                    <p>
+                        Because we are a Gospel Centered, Outward focused church, we value our bilingual service as a
+                        way to extend the good news of the gospel to all the people in our community. <br> You can join
+                        us in
+                        person at 1818 E Southern Ave (Bldg 2, Suite 5) or join us for the livestreamed service on
+                        YouTube.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="bg-dark p-4 rounded" id="about-text">
+                    <h4 class="mb-3">Nuestra Misión</h4>
+                    <p>
+                        Nos reunimos cada semana para centrarnos -o reencontrarnos- en la verdad de la palabra de Dios y
+                        en la gracia que tenemos a través de Jesús. <br>
+                        Proclamamos la verdad de Dios, sometiéndonos a ella,
+                        buscando ser transformados. <br>
+                        Adoramos colectivamente, no como individuos desconectados sino como
+                        una comunidad, a través de la música, la enseñanza, la oración y los sacramentos.
+                    </p>
+                    <p>
+                        Porque somos una iglesia centrada en el Evangelio y enfocada hacia el exterior, valoramos
+                        nuestro servicio bilingüe como una forma de extender las buenas noticias del Evangelio a todas
+                        las personas de nuestra comunidad. <br>
+                        Usted puede unirse a nosotros en persona en 1818 E Southern
+                        Ave (Bldg 2, Suite 5) o unirse a nosotros para el servicio transmitido en vivo por YouTube.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

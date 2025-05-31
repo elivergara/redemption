@@ -8,6 +8,8 @@ from .models import Event
 from .forms import EventForm
 from django.contrib.auth.models import Group
 from django.http import HttpResponse
+from .models import AboutPage
+from .forms import AboutPageForm
 
 
 from django.contrib.auth.views import PasswordChangeView
@@ -150,5 +152,22 @@ def export_emails(request):
     
     return response
 
+# ######################     ABOUT SECTION
 
+def about(request):
+    about = AboutPage.objects.first()
+    return render(request, "home/about.html", {"about": about})
 
+def edit_about(request):
+    about = AboutPage.objects.first()
+    if not about:
+        about = AboutPage.objects.create()
+
+    if request.method == "POST":
+        form = AboutPageForm(request.POST, instance=about)
+        if form.is_valid():
+            form.save()
+            return redirect("home:about")
+    else:
+        form = AboutPageForm(instance=about)
+    return render(request, "home/edit_about.html", {"form": form})
